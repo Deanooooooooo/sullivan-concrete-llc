@@ -25,3 +25,25 @@
 - No old Unique/Trafford leftovers.
 - No unsupported upload/photos copy.
 - No internal build/process copy.
+
+## Live Visual QA
+
+- Desktop hero/form screenshot: `qa-live-desktop-hero.png`
+- Live contact/footer screenshot: `qa-live-contact-footer.png`
+- Mobile hero screenshot: `qa-live-mobile-hero.png`
+- Mobile form screenshot: `qa-live-mobile-form.png`
+
+## Live Checks
+
+- GitHub Pages status: built.
+- Live URL: https://deanooooooooo.github.io/sullivan-concrete-llc/
+- Live HTML: 200.
+- Live CSS: 200.
+- Live hero image: 200.
+- Live `.nojekyll`: 200.
+- One H1.
+- One primary form.
+- Verified mailto route: `Sullivanconcrete1@yahoo.com`.
+- Map iframe present.
+- Facebook rating state present.
+- No old Unique/Trafford leftovers.
