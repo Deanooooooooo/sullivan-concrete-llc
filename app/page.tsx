@@ -19,7 +19,6 @@ import {
   Send,
   Sparkles,
   SquareStack,
-  Star,
   Truck,
 } from "lucide-react";
 import { useEffect, useLayoutEffect, useRef } from "react";
@@ -49,15 +48,14 @@ const services = [
 
 const gallery = [
   { src: "concrete-hero.jpg", title: "Stamped concrete finish", body: "Real Sullivan Concrete project photo showing decorative stamped concrete work in progress." },
-  { src: "concrete-wide.jpg", title: "Large slab project", body: "Public Facebook image showing large-scale slab and site concrete work." },
-  { src: "sullivan-logo.jpg", title: "Curved driveway and walk", body: "Public Facebook image showing exterior concrete paths and driveway work around a home." },
+  { src: "concrete-wide.jpg", title: "Large slab project", body: "Large-scale slab and site concrete work for practical residential and light commercial spaces." },
+  { src: "sullivan-logo.jpg", title: "Curved driveway and walk", body: "Exterior concrete paths and driveway work shaped around the home." },
 ];
 
 const proof = [
-  "Facebook lists Sullivan Concrete LLC as a concrete contractor in Northport, Alabama.",
-  "Public services include slabs, sidewalks, driveways, curbs and stamped concrete.",
-  "Verified Facebook contact routes: phone, email and Hayes Road address.",
-  "Current Facebook page state shows Not yet rated across 2 reviews.",
+  "Concrete slabs, sidewalks, driveways, curbs and stamped concrete for homes and job sites.",
+  "Clear enquiry details help Sullivan understand access, size, finish and timing before pricing.",
+  "Northport contact routes are available by phone and email for estimate requests.",
 ];
 
 function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
@@ -230,7 +228,7 @@ export default function Page() {
 
       <section id="projects" className="bg-[#171510] px-4 py-24 text-white sm:px-6">
         <div className="mx-auto max-w-7xl">
-          <Reveal className="max-w-3xl"><p className="text-sm font-black uppercase text-[#d6b36a]">Real project visuals</p><h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Public Facebook photos from Sullivan Concrete.</h2></Reveal>
+          <Reveal className="max-w-3xl"><p className="text-sm font-black uppercase text-[#d6b36a]">Project visuals</p><h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Concrete finishes, flatwork and outdoor pours.</h2></Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {gallery.map((item) => (
               <article key={item.src} className="overflow-hidden rounded-lg bg-white text-iron shadow-[0_26px_80px_rgba(0,0,0,0.25)]">
@@ -246,7 +244,7 @@ export default function Page() {
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.85fr_1.15fr]">
           <Reveal>
             <div>
-              <p className="text-sm font-black uppercase text-[#8a6a2f]">Contact and proof</p>
+              <p className="text-sm font-black uppercase text-[#8a6a2f]">Contact</p>
               <h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Request a concrete estimate in Northport.</h2>
               <div className="mt-8 grid gap-3">
                 <a className="flex items-center gap-3 rounded-lg bg-[#f2f0ea] p-4 font-black shadow-premium" href={mailtoUrl}><Mail className="text-[#8a6a2f]" size={22} /> {email}</a>
@@ -254,7 +252,6 @@ export default function Page() {
                 <div className="flex items-center gap-3 rounded-lg bg-[#f2f0ea] p-4 font-black shadow-premium"><MapPin className="text-[#8a6a2f]" size={22} /> {address}</div>
               </div>
               <div className="mt-8 grid gap-4">
-                <div className="rounded-lg border border-iron/10 bg-[#f2f0ea] p-5"><div className="flex flex-wrap items-center justify-between gap-3"><p className="font-black">Facebook rating</p><span className="rounded-lg bg-white px-3 py-2 text-sm font-black text-iron/70">Not yet rated · 2 reviews</span></div><div className="mt-4 flex gap-1 text-[#d6b36a]">{[0,1,2,3,4].map((i)=><Star key={i} size={22} fill="currentColor" />)}</div></div>
                 {proof.map((item)=><div key={item} className="flex gap-3 rounded-lg border border-iron/10 bg-white p-4"><CheckCircle2 className="mt-0.5 shrink-0 text-[#8a6a2f]" size={22} /><p className="font-bold leading-7 text-iron/72">{item}</p></div>)}
               </div>
             </div>
